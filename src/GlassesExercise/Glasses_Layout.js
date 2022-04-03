@@ -5,7 +5,7 @@ import './style.css'
 
 export default class Glasses_Layout extends Component {
   
-  state = {
+  state  = {
     glasses: {
       id: 1,
       price: 30,
@@ -18,9 +18,9 @@ export default class Glasses_Layout extends Component {
   renderGlassesButtonList = () => {
     return dataGlasses.map((glass, index) => {
       return (
-          <button key={index} onClick={() => {
+          <button className="border-0 p-4 rounded" key={index} onClick={() => {
               this.chooseGlasses(glass);
-             }}>
+             }}>              
               <img src={glass.url} alt="..." className="w-100" />
           </button>
       );
@@ -40,7 +40,7 @@ export default class Glasses_Layout extends Component {
               <h1 className="text-white text-center p-5">TRY GLASSES APP ONLY</h1>
               <div className="glasses container">
                   <DetailGlasses glasses={this.state.glasses} />
-                  <div className="buttonGlasses mt-5 p-5 border rounded bg-light d-flex">
+                  <div className="buttonGlasses mt-5 border rounded bg-light d-flex">
                     {this.renderGlassesButtonList()}
                   </div>
               </div>

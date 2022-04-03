@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 725px;
+  height: 700px;
 }
 
 .overlay {
@@ -12,7 +12,7 @@
 }
 
 .overlay > h1 {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   font-size: 30px;
 }
 
@@ -41,6 +41,10 @@
   text-align: justify;
 }
 
+.card {
+  border: 2px solid green;
+}
+
 #detailGlassRender img:last-of-type {
   position: absolute;
   top: 25%;
@@ -61,6 +65,10 @@
 }
 
 .buttonGlasses button:hover img {
-  transform: scale(1.1);
+  transform: scale(1.5);
   transition: 0.5s;
+}
+
+.buttonGlasses button:hover {
+  background-color: rgb(179, 179, 179);
 }
